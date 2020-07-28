@@ -1,0 +1,668 @@
+/* @Font Face Starts Here */
+
+/*---- Lato Fonts @font face rule----*/
+@font-face {
+  font-family: 'LatoXRegular';
+  src: url('../fonts/LatoX-Regular.ttf') format('truetype'), url('../fonts/latox-regular-webfont.woff2') format('woff2'), url('../fonts/latox-regular-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'LatoXBold';
+  src: url('../fonts/LatoX-Bold.ttf') format('truetype'), url('../fonts/latox-bold-webfont.woff2') format('woff2'), url('../fonts/latox-bold-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'LatoXItalic';
+  src: url('../fonts/LatoX-Italic.ttf') format('truetype'), url('../fonts/latox-italic-webfont.woff2') format('woff2'), url('../fonts/latox-italic-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'LatoXLight';
+  src: url('../fonts/Lato-Light.ttf') format('truetype'), url('../fonts/lato-light-webfont.woff2') format('woff2'), url('../fonts/lato-light-webfont.woff') format('woff');
+}
+
+/* Open Sans */
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-regular-webfont.woff') format('woff'),
+       url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-bold-webfont.woff') format('woff'),
+       url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'open_sansitalic';
+  src: url('../fonts/opensans-italic-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-italic-webfont.woff') format('woff'),
+       url('../fonts/OpenSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+/* Open Sans Condensed */
+@font-face {
+  font-family: 'open_sans_condensedbold';
+  src: url('../fonts/opensans-condbold-webfont.woff2') format('woff2'),
+       url('../fonts/opensans-condbold-webfont.woff') format('woff'),
+       url('../fonts/OpenSans-CondBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+/* Noto Devnagari */
+@font-face {
+  font-family: 'NotoDevanagariRegular';
+  src: url('../fonts/notosansdevanagari-regular.ttf') format('truetype'), url('../fonts/notosansdevanagari-regular-webfont.woff2') format('woff2'), url('../fonts/notosansdevanagari-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'NotoDevanagariBold';
+  src: url('../fonts/notosansdevanagari-bold.ttf') format('truetype'), url('../fonts/notosansdevanagari-bold-webfont.woff2') format('woff2'), url('../fonts/notosansdevanagari-bold-webfont.woff') format('woff');
+}
+
+/*---- Noto Nastaliq Urdu Fonts @font face rule----*/
+@font-face {
+  font-family: 'NotoNastaliqUrduRegular';
+  src: url('../fonts/NotoNastaliqUrdu-Regular.ttf') format('truetype'), url('../fonts/NotoNastaliqUrdu-Regular.woff2') format('woff2'), url('../fonts/NotoNastaliqUrdu-Regular.woff') format('woff');
+}
+
+/* @font-face {
+  font-family: 'NotoNastaliqUrduRegular';
+  src: url('/Content/fonts/NotoNastaliqUrdu-Regular.ttf') format('truetype'), url('../fonts/NotoNastaliqUrdu-Regular.woff2') format('woff2'), url('../fonts/NotoNastaliqUrdu-Regular.woff') format('woff');
+} */
+/*---- Noto Nastaliq Urdu Fonts @font face rule----*/
+
+
+/* @Font Face Ends Here */
+
+
+@font-face {
+  font-family: 'rIcons';
+  src: url('../fonts/rIcons.eot?5z877s');
+  src: url('../fonts/rIcons.eot?5z877s#iefix') format('embedded-opentype'),
+    url('../fonts/rIcons.ttf?5z877s') format('truetype'),
+    url('../fonts/rIcons.woff?5z877s') format('woff'),
+    url('../fonts/rIcons.svg?5z877s#rIcons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="rico-"],
+[class*=" rico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'rIcons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 32px;
+}
+
+.rico-rekhtalogo:before {
+  content: "\e900";
+}
+.rico-rekhtamonogram:before {
+  content: "\e901";
+}
+.rico-aamozishlogo:before {
+  content: "\e902";
+}
+.rico-aamozishmonogram:before {
+  content: "\e903";
+}
+.rico-compass1:before {
+  content: "\e904";
+}
+.rico-globe1:before {
+  content: "\e905";
+}
+.rico-newsletter1:before {
+  content: "\e906";
+}
+.rico-location1:before {
+  content: "\e907";
+}
+.rico-external1:before {
+  content: "\e908";
+}
+.rico-sufinama_mono:before {
+  content: "\e909";
+}
+.rico-blank7:before {
+  content: "\e90a";
+}
+.rico-blank8:before {
+  content: "\e90b";
+}
+.rico-blank9:before {
+  content: "\e90c";
+}
+.rico-blank10:before {
+  content: "\e90d";
+}
+.rico-blank11:before {
+  content: "\e90e";
+}
+.rico-blank12:before {
+  content: "\e90f";
+}
+.rico-blank13:before {
+  content: "\e910";
+}
+.rico-blank14:before {
+  content: "\e911";
+}
+.rico-blank15:before {
+  content: "\e912";
+}
+.rico-blank16:before {
+  content: "\e913";
+}
+.rico-blank17:before {
+  content: "\e914";
+}
+.rico-blank18:before {
+  content: "\e915";
+}
+.rico-blank19:before {
+  content: "\e916";
+}
+.rico-blank20:before {
+  content: "\e917";
+}
+.rico-blank21:before {
+  content: "\e918";
+}
+.rico-blank22:before {
+  content: "\e919";
+}
+.rico-blank23:before {
+  content: "\e91a";
+}
+.rico-blank24:before {
+  content: "\e91b";
+}
+.rico-blank25:before {
+  content: "\e91c";
+}
+.rico-blank26:before {
+  content: "\e91d";
+}
+.rico-blank27:before {
+  content: "\e91e";
+}
+.rico-blank28:before {
+  content: "\e91f";
+}
+.rico-blank29:before {
+  content: "\e920";
+}
+.rico-grid_view:before {
+  content: "\e922";
+}
+.rico-list_view:before {
+  content: "\e923";
+}
+.rico-blank35:before {
+  content: "\e926";
+}
+.rico-Login:before {
+  content: "\e927";
+}
+.rico-hamburger:before {
+  content: "\e928";
+}
+.rico-more:before {
+  content: "\e929";
+}
+.rico-close:before {
+  content: "\e92a";
+}
+.rico-back:before {
+  content: "\e92b";
+}
+.rico-search:before {
+  content: "\e92c";
+}
+.rico-waffle:before {
+  content: "\e92d";
+}
+.rico-user:before {
+  content: "\e92e";
+}
+.rico-arrowup:before {
+  content: "\e92f";
+}
+.rico-arrowright:before {
+  content: "\e930";
+}
+.rico-arrowdown:before {
+  content: "\e931";
+}
+.rico-arrowleft:before {
+  content: "\e932";
+}
+.rico-arrowthinup:before {
+  content: "\e933";
+}
+.rico-arrowthinright:before {
+  content: "\e934";
+}
+.rico-arrowthindown:before {
+  content: "\e935";
+}
+.rico-arrowthinleft:before {
+  content: "\e936";
+}
+.rico-paperplane:before {
+  content: "\e937";
+}
+.rico-calendar:before {
+  content: "\e938";
+}
+.rico-location:before {
+  content: "\e939";
+}
+.rico-sms:before {
+  content: "\e93a";
+}
+.rico-edit:before {
+  content: "\e93b";
+}
+.rico-camera:before {
+  content: "\e93c";
+}
+.rico-replay:before {
+  content: "\e93d";
+}
+.rico-lines:before {
+  content: "\e93e";
+}
+.rico-fullscreen:before {
+  content: "\e93f";
+}
+.rico-plus:before {
+  content: "\e940";
+}
+.rico-minus:before {
+  content: "\e941";
+}
+.rico-checkbox:before {
+  content: "\e942";
+}
+.rico-checked:before {
+  content: "\e943";
+}
+.rico-visible:before {
+  content: "\e944";
+}
+.rico-hidden:before {
+  content: "\e945";
+}
+.rico-controls:before {
+  content: "\e946";
+}
+.rico-filter:before {
+  content: "\e947";
+}
+.rico-sort:before {
+  content: "\e948";
+}
+.rico-arrowhairup:before {
+  content: "\e949";
+}
+.rico-arrowhairdown:before {
+  content: "\e94a";
+}
+.rico-arrowhairright:before {
+  content: "\e94b";
+}
+.rico-arrowhairleft:before {
+  content: "\e94c";
+}
+.rico-voice:before {
+  content: "\e94d";
+}
+.rico-location_1:before {
+  content: "\e94e";
+}
+.rico-Calendar_1:before {
+  content: "\e94f";
+}
+.rico-Filter:before {
+  content: "\e950";
+}
+.rico-book:before {
+  content: "\e951";
+}
+.rico-open_book:before {
+  content: "\e952";
+}
+.rico-copy:before {
+  content: "\e953";
+}
+.rico-sort-by-alpha:before {
+  content: "\e954";
+}
+.rico-Flag_filled:before {
+  content: "\e955";
+}
+.rico-Flag:before {
+  content: "\e956";
+}
+.rico-Thumb_up:before {
+  content: "\e957";
+}
+.rico-Thumbs_down:before {
+  content: "\e958";
+}
+.rico-blank49:before {
+  content: "\e959";
+}
+.rico-blank51:before {
+  content: "\e95b";
+}
+.rico-home:before {
+  content: "\e95c";
+}
+.rico-delete:before {
+  content: "\e95e";
+}
+.rico-delete_outline:before {
+  content: "\e95f";
+}
+.rico-cancel:before {
+  content: "\e960";
+}
+.rico-download:before {
+  content: "\e961";
+}
+.rico-next:before {
+  content: "\e962";
+}
+.rico-previous:before {
+  content: "\e963";
+}
+.rico-audio:before {
+  content: "\e964";
+}
+.rico-audiooff:before {
+  content: "\e965";
+}
+.rico-audioplaying:before {
+  content: "\e966";
+}
+.rico-video:before {
+  content: "\e967";
+}
+.rico-videostop:before {
+  content: "\e968";
+}
+.rico-videothumbplay:before {
+  content: "\e969";
+}
+.rico-commentary:before {
+  content: "\e96a";
+}
+.rico-translate:before {
+  content: "\e96b";
+}
+.rico-diacritics:before {
+  content: "\e96c";
+}
+.rico-comments:before {
+  content: "\e96d";
+}
+.rico-commentsfilled:before {
+  content: "\e96e";
+}
+.rico-critique:before {
+  content: "\e96f";
+}
+.rico-critiquefilled:before {
+  content: "\e970";
+}
+.rico-additionalinfo:before {
+  content: "\e971";
+}
+.rico-external:before {
+  content: "\e972";
+}
+.rico-pause:before {
+  content: "\e974";
+}
+.rico-popular:before {
+  content: "\e975";
+}
+.rico-editorschoice:before {
+  content: "\e976";
+}
+.rico-photo:before {
+  content: "\e977";
+}
+.rico-critique_new:before {
+  content: "\e978";
+}
+.rico-restore:before {
+  content: "\e979";
+}
+.rico-maximize:before {
+  content: "\e97a";
+}
+.rico-profile_ico:before {
+  content: "\e97b";
+}
+.rico-critique_new_filled:before {
+  content: "\e97c";
+}
+.rico-blank66:before {
+  content: "\e97d";
+}
+.rico-Ghazals:before {
+  content: "\e97e";
+}
+.rico-Nazams:before {
+  content: "\e97f";
+}
+.rico-e-books:before {
+  content: "\e980";
+}
+.rico-Dot:before {
+  content: "\e981";
+}
+.rico-Newsletter_1:before {
+  content: "\e982";
+}
+.rico-Explain:before {
+  content: "\e983";
+}
+.rico-blank79:before {
+  content: "\e98a";
+}
+.rico-blank80:before {
+  content: "\e98b";
+}
+.rico-favorite:before {
+  content: "\e98c";
+}
+.rico-share:before {
+  content: "\e98e";
+}
+.rico-tag:before {
+  content: "\e98f";
+}
+.rico-glasses:before {
+  content: "\e990";
+}
+.rico-facebook:before {
+  content: "\e991";
+}
+.rico-twitter:before {
+  content: "\e992";
+}
+.rico-google:before {
+  content: "\e993";
+}
+.rico-youtube:before {
+  content: "\e994";
+}
+.rico-instagram:before {
+  content: "\e995";
+}
+.rico-whatsapp:before {
+  content: "\e996";
+}
+.rico-pinterest:before {
+  content: "\e997";
+}
+.rico-newsletter:before {
+  content: "\e998";
+}
+.rico-globe:before {
+  content: "\e999";
+}
+.rico-compass:before {
+  content: "\e99a";
+}
+.rico-tag2:before {
+  content: "\e99b";
+}
+.rico-wikipedia:before {
+  content: "\e99c";
+}
+.rico-youtube_colored:before {
+  content: "\e99d";
+}
+.rico-blank86:before {
+  content: "\e99e";
+}
+.rico-blank87:before {
+  content: "\e99f";
+}
+.rico-blank88:before {
+  content: "\e9a0";
+}
+.rico-blank89:before {
+  content: "\e9a1";
+}
+.rico-Dictonary:before {
+  content: "\e9a2";
+}
+.rico-Profile:before {
+  content: "\e9a3";
+}
+.rico-Feedback:before {
+  content: "\e9a4";
+}
+.rico-Nazm:before {
+  content: "\e9a5";
+}
+.rico-Gallery:before {
+  content: "\e9a7";
+}
+.rico-Home_old:before {
+  content: "\e9a8";
+}
+.rico-About:before {
+  content: "\e9a9";
+}
+.rico-Humor:before {
+  content: "\e9aa";
+}
+.rico-Rubai:before {
+  content: "\e9ab";
+}
+.rico-Logout:before {
+  content: "\e9ac";
+}
+.rico-Dohe:before {
+  content: "\e9ad";
+}
+.rico-Ghazal:before {
+  content: "\e9ae";
+}
+.rico-Settings:before {
+  content: "\e9af";
+}
+.rico-Sher:before {
+  content: "\e9b0";
+}
+.rico-blank105:before {
+  content: "\e9b1";
+}
+.rico-blank106:before {
+  content: "\e9b2";
+}
+.rico-blank107:before {
+  content: "\e9b3";
+}
+.rico-rateblank:before {
+  content: "\e9b4";
+}
+.rico-ratehalf:before {
+  content: "\e9b5";
+}
+.rico-ratefull:before {
+  content: "\e9b6";
+}
+.rico-bookmark:before {
+  content: "\e9b7";
+}
+.rico-Loop:before {
+  content: "\e924";
+}
+.rico-order_by:before {
+  content: "\e925";
+}
+.rico-shuffle:before {
+  content: "\e95a";
+}
+.rico-home_filled:before {
+  content: "\e95d";
+}
+.rico-play:before {
+  content: "\e973";
+}
+.rico-Authors:before {
+  content: "\e984";
+}
+.rico-Categories-2:before {
+  content: "\e985";
+}
+.rico-E-books:before {
+  content: "\e986";
+}
+.rico-E-magazine:before {
+  content: "\e987";
+}
+.rico-Poetry:before {
+  content: "\e988";
+}
+.rico-university:before {
+  content: "\e989";
+}
+.rico-favorited:before {
+  content: "\e98d";
+}
+.rico-Favorite:before {
+  content: "\e9a6";
+}
+.rico-bookmarked:before {
+  content: "\e9b8";
+}

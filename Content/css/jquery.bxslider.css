@@ -1,0 +1,498 @@
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+.bx-wrapper {
+    position: relative;
+    margin: 0 auto;
+    /*margin: 0 !important;*/
+    padding: 0;
+    *zoom: 1;
+}
+
+    .bx-wrapper img {
+        max-width: 100%;
+        display: block;
+    }
+
+/** THEME
+===================================*/
+#slider .bx-controls-direction {
+    display: block;
+}
+
+.bx-wrapper .bx-viewport {
+    /*-moz-box-shadow: 0 0 5px #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px #ccc;
+	border:  5px solid #fff;
+	left: -5px;*/
+    /*background: #fff;*/
+    /*fix other elements on the page moving (on Chrome)*/
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
+    /*z-index:2;*/
+}
+.arrowZindx .bx-wrapper .bx-viewport {
+    z-index:2;
+}
+
+.bxslider li {
+    height: 214px;
+}
+
+    .bxslider li a {
+        background-size: cover;
+        display: block;
+        height: 100%;
+        background-position: center center;
+    }
+/*.bxslider li:nth-child(1){
+	background:url(https://www.rekhta.org/Content/3.5/Images/Carousel1.png)no-repeat center;
+	background-size: cover;
+}
+.bxslider li:nth-child(2){
+	background:url(https://www.rekhta.org/Content/3.5/Images/Carousel2.jpg)no-repeat center;
+	background-size: cover;
+}
+.bxslider li:nth-child(3){
+	background:url(https://www.rekhta.org/Content/3.5/Images/Carousel1.png)no-repeat center;
+	background-size: cover;
+}
+.bxslider li:nth-child(4){
+	background:url(https://www.rekhta.org/Content/3.5/Images/Carousel2.jpg)no-repeat center;
+	background-size: cover;
+}*/
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 11px;
+    width: 100%;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+    min-height: 50px;
+    /*background: url(https://www.rekhta.org/Content/Images/bx_loader.gif) center center no-repeat #fff;*/
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    pointer-events: none;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+}
+
+    .bx-wrapper .bx-pager .bx-pager-item,
+    .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+        display: inline-block;
+        *zoom: 1;
+        *display: inline;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a {
+        /*background: #666;*/
+        /*background: rgba(117,112,107,0.6);*/
+        background: rgba(255,255,255,0.3);
+        text-indent: -9999px;
+        display: block;
+        width: 8px;
+        height: 8px;
+        margin: 0 5px;
+        outline: 0;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+        .bx-wrapper .bx-pager.bx-default-pager a:hover,
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            /*background: #fff;*/
+            background: rgba(255,255,255,0.9);
+        }
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+
+.bx-wrapper .bx-prev {
+    /*left: -72px;*/
+    left: 10px;
+    /*background-image: url(/Content/3.5/Images/arrow-left-newRed.png);*/
+}
+
+.bx-wrapper .bx-next {
+    /*right: -72px;*/
+    right: 10px;
+    /*background-image: url(/Content/3.5/Images/arrow-right-newRed.png);*/
+}
+
+/*.bannerSlider .bx-wrapper .bx-prev {
+    background-image: url(/Content/3.5/Images/arrow-left-newWhite.png);
+}
+
+.bannerSlider .bx-wrapper .bx-next {
+    background-image: url(/Content/3.5/Images/arrow-right-newWhite.png);
+}*/
+
+.clcContainer .bx-wrapper .bx-prev, .sectionEbook .bx-wrapper .bx-prev, .cpltSlideContainer .bx-wrapper .bx-prev, .rVideoSlider .bx-wrapper .bx-prev, .morePoetSlider .bx-wrapper .bx-prev, .sfEbkContainer .bx-wrapper .bx-prev, .poetDiscoverContainer .bx-wrapper .bx-prev, .poetEbooks .bx-wrapper .bx-prev, .poetImgshyri .bx-wrapper .bx-prev, .poetBlogSlider .bx-wrapper .bx-prev {
+    left: -16px;
+}
+
+.clcContainer .bx-wrapper .bx-next, .sectionEbook .bx-wrapper .bx-next, .cpltSlideContainer .bx-wrapper .bx-next, .rVideoSlider .bx-wrapper .bx-next, .morePoetSlider .bx-wrapper .bx-next, .sfEbkContainer .bx-wrapper .bx-next, .poetDiscoverContainer .bx-wrapper .bx-next, .poetEbooks .bx-wrapper .bx-next, .poetImgshyri .bx-wrapper .bx-next, .poetBlogSlider .bx-wrapper .bx-next {
+    right: -16px;
+}
+
+.topFivesection .bx-controls {
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    z-index: 1;
+}
+/*.bx-wrapper .bxsliderTopFiveSher .bx-prev {
+    left: -72px;
+}
+.bx-wrapper .bxsliderTopFiveSher .bx-next {
+    right: -72px;
+}*/
+/*.bx-wrapper .bx-prev:hover {
+	background-position: 0 0;
+}
+
+.bx-wrapper .bx-next:hover {
+	background-position: -43px 0;
+}*/
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    line-height:32px;
+    /*text-indent: -9999px;*/
+    z-index: 999;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-color: #f4f4f4;*/
+    border-radius: 50%;
+    /*box-shadow: 0px 3px 2px #e6e6e6;*/
+    color: #e40046;
+    text-align:center;
+}
+
+.bannerSliderSection .bx-wrapper .bx-controls-direction a {
+    margin-top: -16px;
+    border-radius: 0px;
+    box-shadow: none;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+.eventContainer .bx-wrapper .bx-controls-direction a {
+    background-color: #f4f4f4;
+}
+
+.sectionEbook .bx-wrapper .bx-controls-direction a:after, .clcContainer .bx-wrapper .bx-controls-direction a:after, .bannerSliderSection .bx-wrapper .bx-controls-direction a:after, .cpltSlideContainer .bx-wrapper .bx-controls-direction a:after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 130px;
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    background-color: rgba(250, 250, 250, 0);
+}
+.bannerSliderSection .bx-wrapper .bx-controls-direction a:after {
+    width: 50px;
+    height: 212px;
+    top: -83px;
+    left: -10px;
+}
+
+.cpltSlideContainer .bx-wrapper .bx-controls-direction a, .rVideoSlider .bx-wrapper .bx-controls-direction a {
+    top:50%;
+    /*-webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);*/
+}
+
+    /*.cpltTrending .cpltSlideContainer .bx-wrapper .bx-controls-direction a:before, .rVideoSlider .bx-wrapper .bx-controls-direction a:before {
+        height: 72px;
+        top: -20px;
+    }
+
+.cpltTrending .cpltSlideContainer .bx-wrapper .bx-controls-direction a, .rVideoSlider .bx-wrapper .bx-controls-direction a {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+    .cpltSlideContainer .bx-wrapper .bx-controls-direction a.bx-next:before, .rVideoSlider .bx-wrapper .bx-controls-direction a.bx-next:before {
+        left: -15px;
+    }
+
+    .cpltSlideContainer .bx-wrapper .bx-controls-direction a.bx-prev:before, .rVideoSlider .bx-wrapper .bx-controls-direction a.bx-prev:before {
+        left: 15px;
+    }
+
+.bannerSlider .bx-wrapper .bx-controls-direction a:before {
+    height: 214px;
+    top: -85px;
+}
+
+.bannerSlider .bx-wrapper .bx-controls-direction a:before {
+    height: 214px;
+    top: -85px;
+    width: 64px;
+}
+
+.clcContainer .bx-wrapper .bx-controls-direction a.bx-next:before, .sectionEbook .bx-wrapper .bx-controls-direction a.bx-next:before {
+    right: 10px;
+    left: auto;
+}
+
+.bannerSlider .bx-wrapper .bx-controls-direction a.bx-next:before {
+    right: -10px;
+    left: auto;
+}
+
+.bannerSlider .bx-wrapper .bx-controls-direction a.bx-prev:before {
+    left: -10px;
+}*/
+/*.bx-wrapper .bx-controls-direction a:hover {
+        background-color:#f7f7f7;
+    }*/
+.bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
+}
+
+.clcContainer .bx-wrapper .bx-controls-direction a {
+    top: 42%;
+}
+
+.clcContainer .bx-wrapper .bx-controls-direction a, .sectionEbook .bx-wrapper .bx-controls-direction a, .cpltSlideContainer .bx-wrapper .bx-controls-direction a, .topFivesection .bx-wrapper .bx-controls-direction a, .rVideoSlider .bx-wrapper .bx-controls-direction a, .morePoetSlider .bx-wrapper .bx-controls-direction a, .sfEbkContainer .bx-wrapper .bx-controls-direction a, .poetDiscoverContainer .bx-wrapper .bx-controls-direction a, .poetEbooks .bx-wrapper .bx-controls-direction a, .poetImgshyri .bx-wrapper .bx-controls-direction a, .poetBlogSlider .bx-wrapper .bx-controls-direction a {
+    background-color: #fff;
+    /*box-shadow: 0px 3px 2px rgba(0,0,0,0.32);*/
+}
+/* AUTO CONTROLS (START / STOP) */
+.bx-wrapper .bx-controls-auto {
+    text-align: center;
+}
+
+    .bx-wrapper .bx-controls-auto .bx-start {
+        display: block;
+        text-indent: -9999px;
+        width: 10px;
+        height: 11px;
+        outline: 0;
+        background: url(https://www.rekhta.org/Content/Images/controls.png) -86px -11px no-repeat;
+        margin: 0 3px;
+    }
+
+        .bx-wrapper .bx-controls-auto .bx-start:hover,
+        .bx-wrapper .bx-controls-auto .bx-start.active {
+            background-position: -86px 0;
+        }
+
+    .bx-wrapper .bx-controls-auto .bx-stop {
+        display: block;
+        text-indent: -9999px;
+        width: 9px;
+        height: 11px;
+        outline: 0;
+        background: url(https://www.rekhta.org/Content/Images/controls.png) -86px -44px no-repeat;
+        margin: 0 3px;
+    }
+
+        .bx-wrapper .bx-controls-auto .bx-stop:hover,
+        .bx-wrapper .bx-controls-auto .bx-stop.active {
+            background-position: -86px -33px;
+        }
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    text-align: left;
+    width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    right: 0;
+    width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #666\9;
+    background: rgba(80, 80, 80, 0.75);
+    width: 100%;
+}
+
+    .bx-wrapper .bx-caption span {
+        color: #fff;
+        font-family: Arial;
+        display: block;
+        font-size: .85em;
+        padding: 10px;
+    }
+/*.individualEvents .bx-viewport {
+    min-height:246px;
+}*/
+/*.topFivesection .bx-wrapper .bx-viewport {
+    height: auto !important;
+    min-height: 348px;
+}*/
+
+
+.rVideoSlider .bx-wrapper .bx-controls-direction a {
+    margin-top: -30px;
+}
+
+/*.bx-controls{
+    display:none;
+}*/
+
+
+.bannerSliderSection .bx-wrapper img {
+    width: 100%;
+}
+
+@media screen and (min-width:992px) {
+    .clcContainer .bx-wrapper .bx-controls-direction a, .rVideoSlider .bx-wrapper .bx-controls-direction a {
+        width: 42px;
+        height: 42px;
+        line-height:40px;
+        top: 34%;
+    }
+
+    .clcContainer .bx-wrapper .bx-controls-direction a, .sectionEbook .bx-wrapper .bx-controls-direction a, .cpltSlideContainer .bx-wrapper .bx-controls-direction a, .topFivesection .bx-wrapper .bx-controls-direction a, .rVideoSlider .bx-wrapper .bx-controls-direction a, .morePoetSlider .bx-wrapper .bx-controls-direction a, .poetDiscoverContainer .bx-wrapper .bx-controls-direction a, .poetImgshyri .bx-wrapper .bx-controls-direction a, .poetBlogSlider .bx-wrapper .bx-controls-direction a {
+        border: 1px solid #bbbbbb;
+    }
+
+
+    /* slider arrow hover effect start */
+
+    .cpltSlideContainer .bx-wrapper .bx-prev, .cpltSlideContainer .bx-wrapper .bx-next, .rVideoSlider .bx-wrapper .bx-prev, .rVideoSlider .bx-wrapper .bx-next, .morePoetSlider .bx-wrapper .bx-prev, .morePoetSlider .bx-wrapper .bx-next, .poetDiscoverContainer .bx-wrapper .bx-prev, .poetDiscoverContainer .bx-wrapper .bx-next, .poetEbooks .bx-wrapper .bx-prev, .poetEbooks .bx-wrapper .bx-next, .poetImgshyri .bx-wrapper .bx-prev, .poetImgshyri .bx-wrapper .bx-next, .poetBlogSlider .bx-wrapper .bx-prev, .poetBlogSlider .bx-wrapper .bx-next {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.2s;
+    }
+
+        .cpltSlideContainer .bx-wrapper .bx-prev:hover, .cpltSlideContainer .bx-wrapper .bx-next:hover, .clcContainer .bx-wrapper .bx-controls-direction a:hover, .topFivesection .bx-wrapper .bx-prev:hover, .topFivesection .bx-wrapper .bx-next:hover,
+        .eventContainer .bx-wrapper .bx-prev:hover, .eventContainer .bx-wrapper .bx-next:hover, .rVideoSlider .bx-wrapper .bx-next:hover, .rVideoSlider .bx-wrapper .bx-prev:hover, .morePoetSlider .bx-wrapper .bx-next:hover, .morePoetSlider .bx-wrapper .bx-prev:hover, .poetDiscoverContainer .bx-wrapper .bx-next:hover, .poetDiscoverContainer .bx-wrapper .bx-prev:hover, .poetEbooks .bx-wrapper .bx-next:hover, .poetEbooks .bx-wrapper .bx-prev:hover, .poetImgshyri .bx-wrapper .bx-next:hover, .poetImgshyri .bx-wrapper .bx-prev:hover, .poetBlogSlider .bx-wrapper .bx-next:hover, .poetBlogSlider .bx-wrapper .bx-prev:hover {
+            background-color: #e2054b;
+            border: 1px solid #e2054b;
+            color: #fff;
+        }
+
+        .cpltSlideContainer .bx-wrapper .bx-prev:hover, .clcContainer .bx-wrapper .bx-controls-direction .bx-prev:hover, .topFivesection .bx-wrapper .bx-prev:hover,
+        .eventContainer .bx-wrapper .bx-prev:hover, .rVideoSlider .bx-wrapper .bx-prev:hover, .morePoetSlider .bx-wrapper .bx-prev:hover {
+            color:#fff;
+            /*background-image: url(/Content/3.5/Images/prevWhite.png) !important;*/
+        }
+
+        .cpltSlideContainer .bx-wrapper .bx-next:hover, .clcContainer .bx-wrapper .bx-controls-direction .bx-next:hover, .topFivesection .bx-wrapper .bx-next:hover,
+        .eventContainer .bx-wrapper .bx-next:hover, .rVideoSlider .bx-wrapper .bx-next:hover, .morePoetSlider .bx-wrapper .bx-next:hover {
+            color: #fff;
+            /*background-image: url(/Content/3.5/Images/nextWhite.png) !important;*/
+        }
+
+    .cpltSlideContainer .bx-wrapper .bx-prev, .rVideoSlider .bx-wrapper .bx-prev, .morePoetSlider .bx-wrapper .bx-prev, .poetDiscoverContainer .bx-wrapper .bx-prev, .poetEbooks .bx-wrapper .bx-prev, .poetImgshyri .bx-wrapper .bx-prev, .poetBlogSlider .bx-wrapper .bx-prev {
+        left: -24px;
+    }
+
+    .cpltSlideContainer .bx-wrapper .bx-next, .rVideoSlider .bx-wrapper .bx-next, .morePoetSlider .bx-wrapper .bx-next, .poetDiscoverContainer .bx-wrapper .bx-next, .poetEbooks .bx-wrapper .bx-next, .poetImgshyri .bx-wrapper .bx-next, .poetBlogSlider .bx-wrapper .bx-next {
+        right: -24px;
+    }
+
+    .cpltSlideContainer .bx-wrapper:hover .bx-prev, .rVideoSlider .bx-wrapper:hover .bx-prev, .morePoetSlider .bx-wrapper:hover .bx-prev, .poetDiscoverContainer .bx-wrapper:hover .bx-prev, .poetEbooks .bx-wrapper:hover .bx-prev, .poetImgshyri .bx-wrapper:hover .bx-prev, .poetBlogSlider .bx-wrapper:hover .bx-prev {
+        visibility: visible;
+        opacity: 1;
+        left: -16px;
+    }
+
+    .cpltSlideContainer .bx-wrapper:hover .bx-next, .rVideoSlider .bx-wrapper:hover .bx-next, .morePoetSlider .bx-wrapper:hover .bx-next, .poetDiscoverContainer .bx-wrapper:hover .bx-next, .poetEbooks .bx-wrapper:hover .bx-next, .poetImgshyri .bx-wrapper:hover .bx-next, .poetDiscoverContainer .bx-wrapper:hover .bx-next, .poetBlogSlider .bx-wrapper:hover .bx-next {
+        visibility: visible;
+        opacity: 1;
+        right: -16px;
+    }
+    /* slider arrow hover effect end */
+
+    .rVideoSlider .bx-wrapper .bx-controls-direction a {
+        margin-top: -42px;
+        top: 50%;
+    }
+
+
+    .bx-wrapper .bx-controls-direction a {
+        color: #ababab;
+        /*background-image: url(/Content/3.5/Images/prev.png) !important;*/
+    }
+
+    .bannerSliderSection .bx-wrapper .bx-controls-direction a {
+        width: 42px;
+        height: 42px;
+        line-height: 40px;
+        margin-top: -28px;
+    }
+
+    .bannerSliderSection .bx-wrapper .bx-controls-direction a {
+        width: 56px;
+        height: 56px;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+    }
+
+    .bannerSliderSection .bx-wrapper .bx-prev {
+        left: 3%;
+    }
+
+    .bannerSliderSection .bx-wrapper .bx-next {
+        right: 3%;
+    }
+
+    .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+        bottom: 27px;
+    }
+
+
+}
+
+
+@media screen and (min-width:1200px) {
+    /*.bx-controls {
+        display: block;
+    }*/
+}

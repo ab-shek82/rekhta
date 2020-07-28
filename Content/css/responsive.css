@@ -1,0 +1,411 @@
+@media all and (max-width:1199px){
+
+    .navigation{
+        display: none;
+    }
+    
+    .profileLogout{
+        display: none;
+    }
+
+    .backBtn{
+        display: block;
+    }
+#header{
+    height: 48px;
+}
+
+
+#footer{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+}
+.profilebackBtn{
+    display: none;
+}
+.profilePicName{
+    border-left: none;
+}
+
+.profilePicName h4,.dailyGoal,.allTimeReport,.sPLeaderBoard{
+    display: none;
+}
+.profilePicName{
+    padding: 16px 0;
+    width: auto;
+}
+.weeklyProgress{
+    padding: 20px 0px;
+}
+.profilePicName img{
+    margin-right: 16px;
+}
+
+.profileFullVIew{
+    padding: 16px 0px 16px 16px;
+}
+.cSPrifleBody{
+	border-left: none;
+}
+.pageHeader h2{
+    padding: 0 16px 0 0;
+    font-size: 16px;
+    width: auto;
+}
+.pageHeader p,.pageHeader h3{
+    padding-left: 16px;
+}
+.pageHeader img {
+    margin-right: 16px;
+}
+
+.upgradeStrip h2{
+    margin-right: 0;
+    display: block;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+.upgradeStrip h2 span{
+    display: block;
+    margin-right: 0px;
+    padding-right: 0px;
+    border-right: none;
+}
+.upgradeStrip{
+    padding: 8px 0 12px;
+}
+.upgradeStrip .upgradeBtn{
+    font-size: 10px;
+}
+
+.wLIRowItem{
+    float: none;
+    max-width: 32%;
+    display: inline-block;
+    transform: scale(.8);
+    vertical-align: top;
+}
+.wLIRowItem:nth-child(4),.wLIRowItem:nth-child(5){
+    margin-top: 0;
+    position: relative;
+    top: 32px;
+}
+.wLIRow{
+    max-height: 212px;
+    padding-bottom: 0;
+    margin: 0 auto 168px;
+    max-width: 328px;
+}
+.wLPaging {
+    width: calc(100% - 32px);
+    position: absolute;
+    max-width: 100%;
+    left: 16px;
+    margin-left: 0;
+    top: 26px;
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.favStrip,.upgradeStrip{
+    border-left: none;
+    border-right: none;
+}
+
+.wListingItemsListing .wLIRowItem:nth-child(4), .wListingItemsListing .wLIRowItem:nth-child(5) {
+    margin-top: 0;
+    position: relative;
+    top: auto;
+}
+.wListingItemsListing .wLIRowItem{
+    max-width: 32%;
+    display: inline-block;
+    transform: scale(.9);
+    float: none;
+    margin-bottom: 28px;
+}
+.subscriptionCardContnr {
+    padding: 0px;
+    margin-right: -10px;
+}
+.SubscriptionCard, .FreeTrialCard, .ExpiredTrialCard{
+    width: 100%;
+    margin-left: 0;
+}
+.SubscriptionWrapper{
+    padding-top: 0;
+    box-shadow: none;
+}
+.CourseHLContnr {
+    padding: 30px 0px 0px;
+}
+.CourserDescCard {
+    width: calc(50% - 12px);
+    margin-right: 20px;
+}
+
+.designPoetnoteright, .designPoetnoteleft{
+    display: none;
+}
+.designPoetnoteright{
+    display: inline-block;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 0;
+}
+.NotedContnr .DesignNotedTitle{
+    display: block;
+    padding-bottom: 32px;
+}
+.ExpiredTrialCard{
+    display: block;
+}
+.FreeTrialCard span, .ExpiredTrialCard .TECloseBtn{
+    display: none;
+}
+.AamUrduCourseBrifeDesc{
+    padding: 0;
+}
+.AamUrduCourseBrifeDesc .CourseHLContnr, .AamUrduCourseBrifeDesc .NotedContnr{
+    width: 100%;
+    float: none;
+    padding: 10px 0px;
+}
+.NotedContnr .DesignNotedTitle{
+    display: none;
+}
+.NotedDesignimages{
+    padding-bottom: 60px;
+    padding-top: 10px;
+}
+.LifetimeAccess .SubscriptionTitle, .LifetimeAccess .HLCourseTitl{
+    color:#666666;;
+}
+.LifetimeAccess .CourserDescCard h2{
+    color: #666666;
+}
+.LifetimeAccess .CourserDescCard p{
+ color: #888888;
+}
+.LifetimeAccess .PoetNotedDesc{
+    color: #888888;;
+}
+.LifetimeAccess .PoetNotedDesc::before{
+    border: 1px solid#cccccc;
+}
+.LifetimeAccess .PoetNotedDesc::after{
+    border: 1px solid#cccccc;
+}
+.UserSubsBasedSec{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.AamIntrosubTitle, .AamintrosubTitle{
+    font-size: 11px;
+}
+.AamintrosubTitle{
+font-size: 10px;
+}
+.AamIntroTitle{
+    font-size: 19px;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    bottom: 0px;
+}
+.popularCatageoryScreen .WelcomeContent {
+    margin-top: 36px;
+    margin-bottom: 49px;
+}
+.PopularWordScreen .WelcomeContent {
+    margin-top: 19px;
+    margin-bottom: 10px;
+}
+.WelcomeContent {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.AamintroScreen {
+    padding: 30px 0px ;
+}
+.subscriptionCardContnr:first-child {
+    margin-left: -10px;
+}
+.VocubWord:nth-child(2n+2) {
+    margin-right: 0;
+}
+.WDBoxListing {
+    padding: 20px 16px 0px;
+}
+.wDBoxDescContent{
+    padding: 20px 24px 5px;
+}
+.VocubCatTitle {
+    font-size: 12px;
+}
+.WDBoxListing p{
+    font-size: 12px;
+}
+.sherLines p {
+    font-size: 12px;
+}
+.poetName {
+    font-size: 10px;
+    margin-right: 20px;
+}
+.mediaOptions .mPAudio, .mediaOptions .mPFav, .mediaOptions .sPShareBtn{
+    font-size: 20px;
+}
+.WDTMeaningTitle h3, .WDTMeaningTitle h4{
+    padding: 20px 52px 10px;
+    font-size: 14px;
+}
+.WDMeanBoxesWrap {
+    padding: 16px
+}
+.WDMeanContntBox {
+    padding: 15px 0px;
+    width: 100%;
+    margin-bottom: 36px;
+    margin-right: 0px;
+}
+.WDMeanContntBox h3, .WDMeanContntBox h4 {
+    font-size: 16px;
+    line-height: 40px;
+}
+.WDMeanContntBox h4 {
+    font-size: 14px;
+    line-height: 30px;
+}
+.Ortab {
+    font-size: 14px;
+    top: 124px;
+}
+.WDTMeaningTitle h4 {
+    display: none;
+}
+.wDBoxDescContent .sherContent {
+    display: inline-block;
+    padding: 23px 0px;
+    text-align: left;
+}
+.sherLines::before {
+    left: -20px;
+    top: -3px;
+    background: url(../images/DoubleQuote1.png) no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.sherLines::after {
+    right: -24px;
+    bottom: -11px;
+    background: url(../images/DoubleQuote2.png) no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.wordInHEU h3 {
+    font-size: 16px;
+}
+.wordInHEU .wordHi {
+    font-size: 20px;
+}
+.wordInHEU .wordUr {
+    font-size: 25px;
+}
+.wordInHEU .wordEn {
+    letter-spacing: 0.1em;
+    font-family: latoxbold;
+}
+.wDBoxWLangMedia {
+    margin-bottom: 20px;
+}
+.WDsherContentBox .sherLines p {
+    font-size: 12px;
+}
+.WDsherContentBox {
+    padding: 18px 12px;
+}
+.WDsherContentBox .poetName{
+    font-size: 14px;
+    text-align: center;
+}
+.UseaseContntr {
+    padding: 20px 7px 45px;
+}
+.wDBoxDescContent .WDsherContentBox .sherContent{
+text-align: center;
+padding: 0px 0px 0px;
+}
+.sherLines {
+    margin-bottom: 10px;
+}
+.UseaseContntr .WDsherContentBox {
+    padding: 18px 12px 7px;
+}
+.TrnslateContent {
+    padding: 0px 36px;
+}
+.WDCatTypeThree .wDBoxDescContent{
+    background: #fff;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: none;
+}
+.UseageTittle {
+    padding: 0px 0px 0px;
+}
+.TrnslateContent .UseageTittle {
+    padding: 20px 0px 10px;
+}
+.WDSherTrnalation p {
+    font-size: 12px;
+}
+.ViewAllfavBtn{
+    display: none
+}
+.AddedToFavStrip{
+    margin-bottom: 20px;
+}
+.WDExplanationContent {
+    padding: 0px 16px;
+}
+.WDExplanationContent .WdHindiFmly {
+    margin-top: 30px;
+}
+.MoreSherContntrListing .WDRedMorBtn {
+    color: #00AAFF;
+    background: rgba(0, 170, 255, 0.1);
+    border:1px solid #00AAFF;
+    bottom: -47px;
+    width: fit-content;
+    margin: auto;
+    right: 0;
+    left: 0;
+}
+.MoreSherContntrListing .WDsherContentBox {
+    margin-bottom: 60px;
+}
+.SherContentboxWithExpln{
+    margin: 0px 7px;
+}
+}
+@media all and (min-width:768px) and (max-width:1199px){
+
+    .wLIRow{
+        max-width: 600px;
+    }
+    .wLIRowItem{
+        max-width: 32%;
+    transform: none;
+    }
+    .wListingItemsListing .wLIRowItem {
+        max-width: 20%;
+    display: block;
+    float: left;
+    }
+
+}

@@ -1,0 +1,21 @@
+/* Custom dev two */
+* {box-sizing: border-box;}
+
+.flexbox {display: flex; display: -moz-flex; display: -ms-flex; display: -webkit-flex;}
+.flexbox.col {flex-direction: column; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column;}
+.flexbox.h-centr {justify-content: center; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center;}
+.flexbox.v-centr {align-items: center; -moz-align-items: center; -webkit-align-items: center; -ms-align-items: center;}
+
+/* Global styles for Pop up */
+.popup-wrap {position: fixed; top: 0; left: 0; background-color: rgba(255,255,255,0.7); width: 100%; height: 100%; z-index: 999;}
+.popup-global {padding: 30px; background: #FFFFFF; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 20px; position: relative; width: 100%; font-size: 16px;}
+.popup-global.small {max-width: 500px;}
+.popup-global .popup-close {position: absolute; top: 20px; border-radius: 5px; padding: 5px; background: #fff; right: 24px; cursor: pointer;}
+.popup-close .rico-close {font-size: 20px; color: #888888;}
+
+.correct-ans {background-color: #93F5C7; color: #349F6D;}
+.score-container {width: 90px; height: 90px; border-radius: 50%; background-color: #F6F6F6; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); text-align: center; color: #27C77C; font-weight: bold;}
+.score-container h3 {font-size: 30px; margin-bottom: 8px;}
+.score-container span {font-size: 12px;}
+h2.ans-msg {font-weight: bold; margin: 30px 0 20px; font-family: 'open_sansbold';}
+h2.ans-msg + p {font-size: 18px;}
