@@ -111,5 +111,31 @@ $(this).find('.wordText h3').css({
 
 });
 
+	$("#pop-correct-trig").click(function(){
+		$("#pop-correct").fadeIn();
+	});
+	$("#pop-correct .popup-close").click(function(){
+		$("#pop-correct").fadeOut();
+	});
+
+	$("#pop-wrong-trig").click(function(){
+		$("#pop-wrong").fadeIn();
+	});
+
+	$("#pop-wrong .popup-close").click(function(){
+		$("#pop-wrong").fadeOut();
+	});
+	
+	$('.hub-slider-slides ul').hubSlider({
+		selector: $('li'),
+		button: {
+			next: $('.hub-slider-arrow_next'),
+			prev: $('.hub-slider-arrow_prev')
+		},
+		transition: '0.7s',
+		startOffset: 30,
+		auto: false,
+		time: 2 // secondly
+	});
 
 });
