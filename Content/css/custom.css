@@ -23,3 +23,8 @@ h2.ans-msg {font-weight: bold; margin: 30px 0 20px; font-family: 'open_sansbold'
 h2.ans-msg + p {font-size: 18px;}
 .wrong-ans .score-container {color: #FF9999;}
 .wrong-ans .popup-banner {margin-bottom: 20px;}
+
+/* Mobiles */
+@media(max-width: 767px) {
+	.bx-wrapper .bx-pager {bottom: 34px;}
+}

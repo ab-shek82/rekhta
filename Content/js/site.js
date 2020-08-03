@@ -126,16 +126,4 @@ $(this).find('.wordText h3').css({
 		$("#pop-wrong").fadeOut();
 	});
 	
-	$('.hub-slider-slides ul').hubSlider({
-		selector: $('li'),
-		button: {
-			next: $('.hub-slider-arrow_next'),
-			prev: $('.hub-slider-arrow_prev')
-		},
-		transition: '0.7s',
-		startOffset: 30,
-		auto: false,
-		time: 2 // secondly
-	});
-
 });
