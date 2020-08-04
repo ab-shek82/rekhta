@@ -30,6 +30,8 @@ $("#pop-correct .popup-close").click(function(){
 	$("#pop-correct").fadeOut();
 });
 
+
+
 $("#pop-wrong-trig").click(function(){
 	$("#pop-wrong").fadeIn();
 });
@@ -38,7 +40,29 @@ $("#pop-wrong .popup-close").click(function(){
 	$("#pop-wrong").fadeOut();
 });
 
+
+
+$("#word-complete-trig").click(function(){
+	$("#word-complete").fadeIn();
+});
+
+$("#word-complete .popup-close").click(function(){
+	$("#word-complete").fadeOut();
+});
+
+
+
+
 $( "#explanation" ).click(function() {
 	$( "#explanationD" ).slideDown( "slow", function() {
 	});
   });
+  $( "#explanationA" ).click(function() {
+	  $( "#explanationDA" ).slideDown( "slow", function() {
+	  });
+	});
+	
+	$( "#explanationB" ).click(function() {
+		$( "#explanationDB" ).slideDown( "slow", function() {
+		});
+	  });

@@ -143,7 +143,7 @@
 			<div class="card-stack">
 				
 				<ul class="card-list">
-					<li class="card " style="background-color: red;" >
+					<li class="card " >
 						<div class="wDBox">
 
 							<div class="wDBoxHeader clearfix">
@@ -180,7 +180,7 @@
 									<a href="javascript:void(0)" class="poetName">~ Jaleel Manakpuri</a>
 									<div class="mediaOptions">
 									  <a href="javascript:void(0)" class="rico-audio mPAudio"></a>
-									  <a href="javascript:void(0)" class="rico-favorite mPFav"></a>
+									  <a href="javascript:void(0)" class="rico-favorite mPFav" id="word-complete-trig"></a>
 									  <div class="sharingOption">
 										<a href="javascript:void(0)" class="rico-share sPShareBtn"></a>
 	  
@@ -196,10 +196,11 @@
 									  </div>
 	  
 									</div>
-									<a href="javascript:void(0)" class="WDRedMorBtn">Read More</a>
+									<a href="javascript:void(0)" class="WDRedMorBtn" id="explanationA">Read More</a>
 								  </div>
+								  
 								  </div>
-								  <div class="WDExplanationContent">
+								  <div class="WDExplanationContent" id="explanationDA">
 									<h3 class="UseageTittle">Explanation</h3>
 									<p>The poet asserts that his passion for knowledge and indulgence in books are aimed only at forgetting a person. 
 									  Since it is not possible to get rid of passion, he diverts it from his beloved to knowledge in the hope of
@@ -236,10 +237,10 @@
 										  </div>
 		  
 										</div>
-										<a href="javascript:void(0)" class="WDRedMorBtn">Read More</a>
+										<a href="javascript:void(0)" class="WDRedMorBtn" id="explanationB">Read More</a>
 									  </div>
 								  </div>
-								  <div class="WDExplanationContent">
+								  <div class="WDExplanationContent"id="explanationDB">
 									<h3 class="UseageTittle">Explanation</h3>
 									<p>The poet asserts that his passion for knowledge and indulgence in books are aimed only at forgetting a person. 
 									  Since it is not possible to get rid of passion, he diverts it from his beloved to knowledge in the hope of
@@ -260,7 +261,7 @@
 						</div>
 						
 					</li>
-					<li class="card" style="background-color: blue;">
+					<li class="card">
 						<div class="wDBox">
 
 							<div class="wDBoxHeader clearfix">
@@ -349,7 +350,7 @@
 						
 						
 					</li>
-					<li class="card" style="background-color: green;">
+					<li class="card">
 						<div class="wDBox">
 
 							<div class="wDBoxHeader clearfix">
@@ -413,7 +414,7 @@
 						
 					</li>					
 					
-							<li class="card activeNow" style="background-color: yellow;">
+							<li class="card activeNow">
 								<div class="wDBox">
 									<div class="wDBoxHeader clearfix">
 										<div class="wDBoxWLangMedia clearfix">
@@ -568,40 +569,26 @@
 <!-- <script src="Content/js/jquery.bxslider.js"></script> -->
 <!-- <script src="Content/js/site.js"></script> -->
 
-<!-- Wrapper Ends Here -->
+<!-- Wrapper Ends Here
+-->
 
-<div id="pop-correct">
+<div id="word-complete">
 	<div class="popup-wrap flexbox h-centr v-centr">
-		<div class="popup-global small correct-ans flexbox col v-centr">
+		<div class="popup-global small word-complete flexbox col v-centr">
 			<span class="popup-close"><i class="rico-close"></i></span>
 			<div class="popup-banner">
-				<img src="Content/images/Correct-popup.png" alt="correct-answer" />
+				<img src="Content/images/Word-completed.png" alt="correct-answer" />
 			</div>
-			<div class="score-container flexbox col h-centr">
-				<h3>20</h3>
+			<div class="score-container flexbox col h-centr" style="margin-top: -110px;">
+				<h3>30</h3>
 				<span>POINTS</span>
 			</div>
-			<h2 class="ans-msg">GOOD JOB BUDDY!</h2>
-			<P>Keep up the good work</P>
+			<h2 class="word-msg">WORD COMPLETE</h2>
+			<P>Keep Going</P>
 		</div>
 	</div>
-</div>
-<div id="pop-wrong">
-	<div class="popup-wrap flexbox h-centr v-centr">
-		<div class="popup-global small wrong-ans flexbox col v-centr">
-			<span class="popup-close"><i class="rico-close"></i></span>
-			<div class="popup-banner">
-				<img src="Content/images/Oops-popup.png" alt="correct-answer" />
-			</div>
-			<div class="score-container flexbox col h-centr">
-				<h3>10</h3>
-				<span>POINTS</span>
-			</div>
-			<h2 class="ans-msg">NICE TRY!</h2>
-			<P>Don't worry! You've earned 10pts for the effort.</P>
-		</div>
-	</div>
-</div>
+</div> 
+
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
   

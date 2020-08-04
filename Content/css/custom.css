@@ -13,8 +13,9 @@
 .popup-global .popup-close {position: absolute; top: 20px; border-radius: 5px; padding: 5px; background: #fff; right: 24px; cursor: pointer;}
 .popup-close .rico-close {font-size: 20px; color: #888888;}
 
-#pop-wrong, #pop-correct {display: none;}
+#pop-wrong, #pop-correct, #word-complete {display: none;}
 .correct-ans {background-color: #93F5C7; color: #349F6D;}
+.word-complete {background-color: #AC8AEE; color: #fff; border:2px solid #4B0D89;}
 .wrong-ans {background-color: #FFE9E9; color: #F96666;}
 .score-container {width: 90px; height: 90px; border-radius: 50%; background-color: #F6F6F6; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); text-align: center; color: #27C77C; font-weight: bold;}
 .score-container h3 {font-size: 30px; margin-bottom: 8px;}
@@ -22,7 +23,12 @@
 h2.ans-msg {font-weight: bold; margin: 30px 0 20px; font-family: 'open_sansbold';}
 h2.ans-msg + p {font-size: 18px;}
 .wrong-ans .score-container {color: #FF9999;}
+.word-complete .score-container {color: #AD7BDF;}
+
+h2.word-msg {font-weight: bold; font-size: 20px; margin: 30px 0 20px; font-family: 'lato', 'open_sansbold';}
+h2.word-msg + p { font-size: 16px; font-weight: regular;}
 .wrong-ans .popup-banner {margin-bottom: 20px;}
+
 
 /* Mobiles */
 @media(max-width: 767px) {
