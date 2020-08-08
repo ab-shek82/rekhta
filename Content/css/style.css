@@ -256,7 +256,7 @@ img {
 }
 
 .profileTitle {
-    font-size: 12px;
+    font-size: 11px;
     color: #666666;
     text-transform: uppercase;
     font-family: 'LatoXBold';
@@ -354,10 +354,14 @@ img {
     vertical-align: middle;
 }
 
-.aTRScore h5 span,
+.aTRScore h5 span {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+}
 .sPLBBody h5 span {
     display: block;
-    font-size: 10px;
+    font-size: 8px;
     letter-spacing: 0.1em;
 }
 
@@ -1939,3 +1943,15 @@ color: #666666;
 .MoreSherContntrListing .WDRedMorBtn.WDReadLessBtn{
     padding: 4px 21.38px;
 }
+.viewallBtn { background-color: #E1F2FB; border: 2px solid #00AAFF; border-radius: 1000px;font-size: 12px;
+    line-height: 25px; color: #1BBBFC;
+    font-family: 'LatoXBold';
+    text-transform: uppercase;padding: 6px 12px;
+    margin: 0 0 0 100px;
+    line-height: inherit;
+    font-weight: bold; }
+
+    .cathead {padding: 18px 0 !important;}
+    .cathead h2 a { line-height: 30px !important; font-weight: bold; font-size: 22px; background-color: #F1FCFA ; border-radius: 5px; margin-top: 0;
+    height: 30px; width: 30px; margin-left: 10px;
+    }

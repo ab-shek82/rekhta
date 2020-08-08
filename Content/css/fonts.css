@@ -666,3 +666,7 @@
 .rico-bookmarked:before {
   content: "\e9b8";
 }
+.rico-catStar:before
+{
+  content: "\f005";
+}
