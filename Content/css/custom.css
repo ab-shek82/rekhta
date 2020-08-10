@@ -1,5 +1,7 @@
+
 /* Custom dev two */
-* {box-sizing: border-box;}
+.borderBox {box-sizing: border-box;}
+.container:after {content: ""; display: table; clear: both;}
 
 .flexbox {display: flex; display: -moz-flex; display: -ms-flex; display: -webkit-flex;}
 .flexbox.col {flex-direction: column; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column;}
@@ -30,8 +32,86 @@ h2.word-msg + p { font-size: 16px; font-weight: regular;}
 .wrong-ans .popup-banner {margin-bottom: 20px;}
 
 /* Full View - User Nav dropdown */
-.fullview-drpdwn {background-color: #fff;}
 
+.fullview-drpdwn {background-color: #fff; position: absolute; left: 0; right: 0; z-index: 10; display: none; border-top: 1px solid #eee; box-shadow: 0px 4px 10px rgba(204, 204, 204, 0.5);}
+.rico-arrowdown.fviewActive:before {content: "\e92f";}
+.fullview-drpdwn .container > .lft-container {margin-bottom: 50px; float: left; width: 60%;}
+.fullview-drpdwn .rtl-container {overflow: hidden; margin-right: 94px;}
+.fullview-drpdwn .container > div.lft-container:first-child {margin-top: 50px;}
+.fullview-drpdwn .container > div.lft-container:last-child {margin-bottom: 0;}
+.fview-boxpad {padding: 0 50px;}
+.block-heading {font-weight: 900; font-size: 14px; margin-bottom: 14px; color: #666666; letter-spacing: 2px;}
+
+.prog-fullview .wPDays i {width: 11px; height: 11px;}
+.prog-fullview .wPDays a {font-size: 12px;}
+
+.goal-progressbar, .setgoal, .fullview-drpdwn .badge-box {border-left: 2px solid #eeeeee;}
+.dailyGoal-drpdwn, .weeklyProgress, .aTimeBox {min-width: 175px;}
+
+.goal-progressbar ul li {margin-bottom: 15px;}
+.goal-progressbar ul li:last-child {margin: 0;}
+.goal-progressbar h4, .goal-progressbar span {text-transform: uppercase; font-weight: 900; color: #666; min-width: 55px; font-size: 11px;}
+.goal-progressbar span {min-width: 10px;}
+.goal-progressbar .dGProgress {margin-right: 25px;}
+
+.setgoal input {display: block; width: 100%; border: 2px solid #eee; height: 24px; border-radius: 4px; font-family: "Lato"; font-weight: 900; color: #999;}
+
+.badge-box ul li {text-align: center; margin-right: 25px;}
+.badge-box ul li:last-child {margin-right: 0;}
+.badge-box ul li label {font-family: 'LatoXBold'; font-size: 9px; color: #666; margin: 12px 0 0; text-transform: uppercase; display: block;}
+.badge-box .label-novice {background-image: url("../images/Novice-badge.svg"); background-repeat: no-repeat; background-position: 2px 3px;}
+.badge-box .label-streak {background-image: url("../images/Streak-badge.svg"); background-repeat: no-repeat; background-position: 2px 3px;}
+.badge-box .label-sufi {background-image: url("../images/sufi-badge.svg"); background-repeat: no-repeat; background-position: center;}
+.badge-box .wordCircle, .badge-box .wordCircle::after {width: 80px; height: 80px;}
+
+.lboard-score {border-left: 2px solid #eee; border-right: 2px solid #eee;}
+.lboard-head {justify-content: space-between; -webkit-justify-content: space-between; -ms-justify-content: space-between; padding-top: 10px; padding-bottom: 10px; padding-top: 16px; padding-bottom: 16px; border-bottom: 2px solid #eee; margin-bottom: 10px;}
+.lboard-head h4.block-heading {margin-bottom: 0;}
+.lboard-list ul li {padding: 10px 0; margin-bottom: 5px;}
+.lboard-list .score-sr {border: 1px solid #00AAFF; border-radius: 50%; width: 22px; height: 22px; letter-spacing: 0.15em; font-size: 10px; text-align: center;
+font-family: 'LatoXBold'; color: #00AAFF; line-height: 21px; display: inline-block;}
+.lboard-list h5 {flex: 1; -webkit-flex: 1; -ms-flex: 1; font-family: 'LatoXBold'; font-size: 10px; color: #666; text-transform: uppercase; letter-spacing: 1px; margin: 0 25px;}
+.lboard-list label {font-family: 'open_sansbold'; font-size: 18px; color: #666;}
+
+/* Login Page */
+.user-page {background-color: #FAFAFA;}
+.page-heading {font-size: 30px; font-family: "Lato"; font-weight: 900; color: #666; text-transform: uppercase; margin: 35px 0 25px;}
+.text-center {text-align: center;}
+
+.block-user {width: 100%; max-width: 600px; background-color: #ffffff; box-sizing: border-box; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 20px; margin: 0 auto; padding: 40px 0; color: #888888; position: relative;}
+.block-user:before, .block-user:after {content: ""; position: absolute; bottom: 0; display: block; background-repeat: no-repeat;} 
+.block-user:before {background-image: url("../images/Login1.png"); width: 77px; height: 250px; left: -110px; bottom: -21px;}
+.block-user:after {background-image: url("../images/Login2.png"); width: 130px; height: 330px; right: -165px; bottom: -45px;}
+
+.login-form, .login-social {padding: 0 40px;}
+.login-social {border-left: 1px solid #cccccc;}
+.block-user input[type="text"], 
+.block-user input[type="password"] {border: none; border-bottom: 1px solid #cccccc; height: 30px; min-width: 260px; display: block; color: #888; font-size: 10px; font-family: "Lato"; font-weight: 900; letter-spacing: 1px;}
+.block-user input[type="text"]:focus, 
+.block-user input[type="password"]:focus {outline: none;}
+
+.block-user .row-form {margin-bottom: 30px;}
+.block-user .login-cta {justify-content: space-between; -webkit-justify-content: space-between; -ms-justify-content: space-between;}
+.form-input-check input {margin: 0 5px 0 0;}
+.block-user .login-cta a {color: #888; text-decoration: underline;}
+
+.block-user .form-action {margin: 30px 0;}
+.block-user .form-action button, .login-social-links > a {color: #00aaff; line-height: 36px; font-family: latoxregular; font-style: normal; font-weight: bold; font-size: 14px; letter-spacing: .05em; text-transform: uppercase; border-radius: 30px; border: 2px solid #00aaff; box-sizing: border-box; min-width: 150px; background-color: #E1F2FB; cursor: pointer;}
+.block-user .form-action button:focus {outline: none;}
+.login-form p {font-size: 9px; font-family: Latoxbold; }
+.login-form p a {color: #00aaff;}
+
+.login-social h3, .login-social h5 {font-size: 10px; font-family: "Lato"; font-weight: 900; letter-spacing: 1px}
+.login-social-links > a {display: block; margin: 30px auto; background-color: transparent; border-color: #ccc; line-height: 34px; text-align: center;}
+.reg-link {margin-top: 15px;}
+.login-social-links > a span {font-size: 26px; position: relative; top: 5px;}
+.reg-link a {color: #00aaff; text-transform: uppercase; font-weight: 900; font-weight: 900; font-size: 10px; letter-spacing: 1px; font-family: "Lato"; text-decoration: underline;}
+
+/* Register page */
+.block-user-reg .row-form {margin-bottom: 15px; position: relative;}
+.block-user-reg .row-form .chk-pwd {position: absolute; right: 15px; top: 7px; z-index: 5; cursor: pointer;}
+.block-user-reg:before {background-image: url("../images/Signup-1.png"); width: 130px; height: 330px; left: -158px; bottom: -91px;}
+.block-user-reg:after {background-image: url("../images/Signup-2.png"); width: 175px; height: 330px; right: -175px; bottom: -69px;}
 
 /* Mobiles */
 @media(max-width: 767px) {

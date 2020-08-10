@@ -66,6 +66,7 @@ img {
     width: 100%;
     z-index: 9;
     background: #fff;
+	height: 49px;
 }
 
 .menuIcon {
