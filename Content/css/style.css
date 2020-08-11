@@ -1955,3 +1955,8 @@ color: #666666;
     .cathead h2 a { line-height: 30px !important; font-weight: bold; font-size: 22px; background-color: #F1FCFA ; border-radius: 5px; margin-top: 0;
     height: 30px; width: 30px; margin-left: 10px;
     }
+    .cathead h2 a:hover {-webkit-box-shadow: 0 2px 15px 1px rgba(225, 225, 225, 0.1);
+        box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.1);}
+    .tortIco { display: inline; float: left; text-align: center;}
+    .tortIco img {margin: 13px auto;
+        height: 20px;}
