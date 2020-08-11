@@ -126,4 +126,9 @@ $(this).find('.wordText h3').css({
 		$("#pop-wrong").fadeOut();
 	});
 	
+	$(".pFullViewBtn").on('click', function(){
+		$(this).toggleClass("fviewActive");
+		$("#fullview-user").fadeToggle();
+	});
+	
 });
