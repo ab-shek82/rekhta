@@ -40,7 +40,7 @@ h2.word-msg + p { font-size: 16px; font-weight: regular;}
 .fullview-drpdwn .container > div.lft-container:first-child {margin-top: 50px;}
 .fullview-drpdwn .container > div.lft-container:last-child {margin-bottom: 0;}
 .fview-boxpad {padding: 0 50px;}
-.block-heading {font-weight: 900; font-size: 14px; margin-bottom: 14px; color: #666666; letter-spacing: 2px;}
+.block-heading {font-family: "Lato"; font-weight: 900; font-size: 14px; margin-bottom: 14px; color: #666666; letter-spacing: 2px;}
 
 .prog-fullview .wPDays i {width: 11px; height: 11px;}
 .prog-fullview .wPDays a {font-size: 12px;}
@@ -54,7 +54,7 @@ h2.word-msg + p { font-size: 16px; font-weight: regular;}
 .goal-progressbar span {min-width: 10px;}
 .goal-progressbar .dGProgress {margin-right: 25px;}
 
-.setgoal input {display: block; width: 100%; border: 2px solid #eee; height: 24px; border-radius: 4px; font-family: "Lato"; font-weight: 900; color: #999;}
+.setgoal input {display: block; width: 100%; border: 2px solid #eee; height: 24px; border-radius: 4px; font-family: "Lato"; font-weight: 900; color: #999; min-width: 156px;}
 
 .badge-box ul li {text-align: center; margin-right: 25px;}
 .badge-box ul li:last-child {margin-right: 0;}
@@ -113,7 +113,33 @@ font-family: 'LatoXBold'; color: #00AAFF; line-height: 21px; display: inline-blo
 .block-user-reg:before {background-image: url("../images/Signup-1.png"); width: 130px; height: 330px; left: -158px; bottom: -91px;}
 .block-user-reg:after {background-image: url("../images/Signup-2.png"); width: 175px; height: 330px; right: -175px; bottom: -69px;}
 
+/* Medium screen sizes  */
+@media(max-width: 1199px) {
+	.fview-boxpad.weeklyProgress {padding: 0 50px;}
+	.badge-box ul li {margin-right: 5px;}
+}
+
+/* Tablet screen sized */
+@media(max-width: 991px) {
+	.fullview-drpdwn > .container {display: flex; display: -moz-flex; display: -ms-flex; display: -webkit-flex; flex-flow: column; -webkit-flex-flow: column; -ms-flex-flow: column;}
+	.fullview-drpdwn .rtl-container {margin-right: 0;}
+	.lboard-score {border-left: 0; border-right: 0;}
+	.lboard-headv {border-top: 2px solid #eee;}
+}
+
+
 /* Mobiles */
 @media(max-width: 767px) {
+	.cSPrifleBody {display: flex; display: -moz-flex; display: -ms-flex; display: -webkit-flex;}
 	.bx-wrapper .bx-pager {bottom: 34px;}
+	/* Full view - Dropdown */
+	.fview-boxpad:not(.lboard-head) {padding: 0 15px;}
+	.fullview-drpdwn > .container > div:first-child {order: 1; -webkit-order: 1; -ms-order: 1;}
+	.rtl-container {order: 2; -webkit-order: 2; -ms-order: 2;}
+	.fullview-drpdwn > .container > div:nth-child(2) {order: 3; -webkit-order: 3; -ms-order: 3;}
+	.fullview-drpdwn > .container > div:nth-child(3) {order: 4; -webkit-order: 4; -ms-order: 4;}
+	.fullview-drpdwn > .container > div:first-child > .flexbox {flex-flow: column; -webkit-flex-flow: column; -ms-flex-flow: column; align-items: center; -moz-align-items: center; -webkit-align-items: center; -ms-align-items: center;}
+	.fullview-drpdwn .container > .lft-container {width: 100%;}
+	.goal-progressbar {border-left: 0; margin-top: 30px;}
+	.setgoal input {min-width: 100%;}
 }
