@@ -1315,7 +1315,7 @@ color: #00AAFF;
 
 /* introduction screen end*/
 /* subscription page start*/
-.SubscriptionWrapper{
+.SubscriptionWrapper, .quiz-inner-all{
     max-width: 830px;
     margin: auto;
     width: 100%;
