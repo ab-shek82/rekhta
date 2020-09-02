@@ -92,7 +92,9 @@ font-family: 'Lato', sans-serif; color: #00AAFF; line-height: 21px; display: inl
 .login-form, .login-social {padding: 0 40px;}
 .login-social {border-left: 1px solid #cccccc;}
 .block-user input[type="text"], 
-.block-user input[type="password"] {border: none; border-bottom: 1px solid #cccccc; height: 30px; min-width: 260px; display: block; color: #888; font-size: 10px; font-family: "Lato"; font-weight: 900; letter-spacing: 1px;}
+.block-user input[type="password"],
+.user-profile-form input[type="text"], 
+.user-profile-form input[type="password"] {border: none; border-bottom: 1px solid #cccccc; height: 30px; min-width: 260px; display: block; color: #888; font-size: 10px; font-family: "Lato"; font-weight: 900; letter-spacing: 1px; text-transform: uppercase;}
 .block-user input[type="text"]:focus, 
 .block-user input[type="password"]:focus {outline: none;}
 
@@ -102,7 +104,11 @@ font-family: 'Lato', sans-serif; color: #00AAFF; line-height: 21px; display: inl
 .block-user .login-cta a {color: #888; text-decoration: underline;}
 
 .block-user .form-action {margin: 30px 0;}
-.block-user .form-action button, .login-social-links > a {color: #00aaff; line-height: 36px; font-family: latoxregular; font-style: normal; font-weight: bold; font-size: 14px; letter-spacing: .05em; text-transform: uppercase; border-radius: 30px; border: 2px solid #00aaff; box-sizing: border-box; min-width: 150px; background-color: #E1F2FB; cursor: pointer;}
+.block-user .form-action button, .login-social-links > a, .btn {color: #00aaff; line-height: 36px; font-family: latoxregular; font-style: normal; font-weight: bold; font-size: 14px; letter-spacing: .05em; text-transform: uppercase; border-radius: 30px; border: 2px solid #00aaff; box-sizing: border-box; min-width: 150px; background-color: #E1F2FB; cursor: pointer;}
+/* Global button */
+.btn {height: 35px; line-height: unset; font-size: 11px; min-width: 100px;}
+.btn.btn-secondary {border-color: #CCCCCC; color: #666; background-color: transparent;}
+
 .block-user .form-action button:focus {outline: none;}
 .login-form p {font-size: 9px; font-family: Latoxbold; }
 .login-form p a {color: #00aaff;}
@@ -133,6 +139,27 @@ font-family: 'Lato', sans-serif; color: #00AAFF; line-height: 21px; display: inl
 .opt-green {background-color: #39D694;}
 .opt-red {background-color: #FF9999;}
 .opt-sep {font-size: 18px; font-family: "Lato"; font-weight: 900; margin: 0 30px;}
+
+/* Profile page */
+.contentShortprofile.profileEdit-form {padding: 17px 0;}
+.profileEdit-form .cSPrifleBody {border-left: 0;}
+.profileEdit-form .profilePicName {width: auto;}
+.profileEdit-form .profilePicName img {margin-right: 0; width: 90px; height: 90px;}
+
+.form-body {flex: 1; -webkit-flex: 1; -ms-flex: 1;}
+.form-body > div {padding: 0 35px; -webkit-flex: 1; -ms-flex: 1;}
+.form-body > div > div:first-child {margin-bottom: 15px;}
+.form-sep {position: relative;}
+.form-sep:after, .form-sep:before {content: ""; position: absolute; width: 2px; height: 50px; background-color: #CCCCCC; top: 23px;}
+.form-sep:after {right: 0;}
+.form-sep:before {left: 0;}
+
+.user-profile-form input[type="text"], .user-profile-form input[type="password"] {width: 100%;}
+.reset-btn {position: relative;}
+.reset-btn .btn {position: absolute; right: -13px; bottom: 0; z-index: 10;}
+
+.user-profile-form .form-sbmt {padding: 0 35px;}
+.user-profile-form .form-sbmt .btn-secondary {margin-bottom: 5px;}
 
 /* Medium screen sizes  */
 @media(max-width: 1199px) {
