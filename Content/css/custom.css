@@ -1,12 +1,15 @@
 
 /* Custom dev two */
 .borderBox {box-sizing: border-box;}
-.container:after {content: ""; display: table; clear: both;}
+.container:after, .clearfix:after {content: ""; display: table; clear: both;}
 
 .flexbox {display: flex; display: -moz-flex; display: -ms-flex; display: -webkit-flex;}
 .flexbox.col {flex-direction: column; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column;}
 .flexbox.h-centr {justify-content: center; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center;}
 .flexbox.v-centr {align-items: center; -moz-align-items: center; -webkit-align-items: center; -ms-align-items: center;}
+.spaceBetween {justify-content: space-between; -webkit-justify-content: space-between; -ms-justify-content: space-between;}
+
+.btn.btn-sceondary {background: #CEFDD3; border: 2px solid #28A176; color: #28A176;}
 
 /* Global styles for Pop up */
 .popup-wrap {position: fixed; top: 0; left: 0; background-color: rgba(255,255,255,0.7); width: 100%; height: 100%; z-index: 999;}
@@ -46,7 +49,7 @@ h2.word-msg + p { font-size: 16px; font-weight: regular;}
 .fullview-drpdwn .container > div.lft-container:first-child {margin-top: 50px;}
 .fullview-drpdwn .container > div.lft-container:last-child {margin-bottom: 0;}
 .fview-boxpad {padding: 0 50px;}
-.block-heading {font-family: "Lato"; font-weight: 900; font-size: 14px; margin-bottom: 14px; color: #666666; letter-spacing: 2px;}
+.block-heading {font-family: "Lato"; font-weight: 900; font-size: 14px; margin-bottom: 14px; color: #666666; letter-spacing: 2px; text-transform: uppercase;}
 
 .prog-fullview .wPDays i {width: 11px; height: 11px;}
 .prog-fullview .wPDays a {font-size: 12px;}
@@ -106,7 +109,7 @@ font-family: 'Lato', sans-serif; color: #00AAFF; line-height: 21px; display: inl
 .block-user .form-action {margin: 30px 0;}
 .block-user .form-action button, .login-social-links > a, .btn {color: #00aaff; line-height: 36px; font-family: latoxregular; font-style: normal; font-weight: bold; font-size: 14px; letter-spacing: .05em; text-transform: uppercase; border-radius: 30px; border: 2px solid #00aaff; box-sizing: border-box; min-width: 150px; background-color: #E1F2FB; cursor: pointer;}
 /* Global button */
-.btn {height: 35px; line-height: unset; font-size: 11px; min-width: 100px;}
+.btn {height: 35px; line-height: unset; font-size: 11px; min-width: 100px; padding: 0 10px;}
 .btn.btn-secondary {border-color: #CCCCCC; color: #666; background-color: transparent;}
 
 .block-user .form-action button:focus {outline: none;}
@@ -141,6 +144,9 @@ font-family: 'Lato', sans-serif; color: #00AAFF; line-height: 21px; display: inl
 .opt-sep {font-size: 18px; font-family: "Lato"; font-weight: 900; margin: 0 30px;}
 
 /* Profile page */
+.favStrip.strip-alert {background: #F57676; border-color: #F57676; color; #fff; padding: 5px 0;}
+.favStrip h3 {font-size: 14px; color: #fff; text-transform: uppercase; font-family: "Lato"; font-weight: 900; letter-spacing: 0.1em; border-right: 2px solid #fff; padding-right: 15px;}
+.favStrip p {color: #fff; letter-spacing: 0.05em; margin: 0 15px;}
 .contentShortprofile.profileEdit-form {padding: 17px 0;}
 .profileEdit-form .cSPrifleBody {border-left: 0;}
 .profileEdit-form .profilePicName {width: auto;}
@@ -160,6 +166,36 @@ font-family: 'Lato', sans-serif; color: #00AAFF; line-height: 21px; display: inl
 
 .user-profile-form .form-sbmt {padding: 0 35px;}
 .user-profile-form .form-sbmt .btn-secondary {margin-bottom: 5px;}
+
+.page-profile-wrap {padding-top: 40px;}
+.page-profile-wrap > div:not(.prof-content) {float: left; width: 30%; clear: left; margin-right: 30px;}
+.page-profile-wrap .prof-content {overflow: hidden; padding-left: 45px; border-left: 1px solid #ccc;}
+.page-profile-wrap .allTimeReport {float: none; padding: 16px 0;}
+.page-profile-wrap .allTimeReport:before {display: none;}
+.page-profile-wrap .badge-box {border-bottom: 1px solid #ccc; border-top: 1px solid #ccc; padding: 20px 0;}
+.prof-faq .flexbox, .favfilter {justify-content: space-between; -webkit-justify-content: space-between; -ms-justify-content: space-between; align-items: flex-end; -webkit-align-items: flex-end; -ms-align-items: flex-end;}
+.prof-faq > div {padding: 16px 0;}
+.prof-faq > div:first-child {border-bottom: 1px solid #ccc;}
+.prof-faq p {font-style: italic; color: #666; font-weight: bold;}
+
+.prof-contentOne {max-width: 450px;}
+.fav-list ul li {margin-bottom: 10px;}
+.fav-list ul li:last-child {margin-bottom: 0;}
+.favfilter {margin-bottom: 15px;}
+.favfilter h4 {margin: 0;}
+.fav-card {border-radius: 8px; border: 2px solid;}
+.fav-card > div {width: 45%; padding: 15px 20px; min-height: 70px;}
+.fav-card > div:first-child {width: 55%; border-right: 2px solid rgba(0,0,0,0.2); font-size: 16px;}
+.fav-card p, .fav-card span {color: #ffffff;}
+.fav-word-cat p {text-transform: uppercase; margin-bottom: 5px; font-weight: normal;}
+
+.prof-contentTwo {margin-top: 46px; padding-top: 26px; border-top: 1px solid #ccc;}
+.fav-couplet p {line-height: 36px; text-align: center; font-style: italic;}
+.fav-couplet p span {display: block;}
+
+.purp-shade1 {background-color: #AD7BDF; border-color: #4B0D89;}
+.purp-shade2 {background-color: #AC8AEE; border-color: #761BBE;}
+.green-shade1 {background-color: #39D694; border-color: #18816D;}
 
 /* Medium screen sizes  */
 @media(max-width: 1199px) {
