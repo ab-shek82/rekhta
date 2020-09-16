@@ -4,7 +4,7 @@
   <meta name="google" content="notranslate" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
-<title>Word Inner Page 1</title>
+<title>Favourite Words</title>
 <link rel='stylesheet' href='Content/css/reset.css' type='text/css' media='all' />
 <link rel='stylesheet' href='Content/css/fonts.css' type='text/css' media='all' />
 <link rel='stylesheet' href='Content/css/jquery.bxslider.css' type='text/css' media='all' />
@@ -20,11 +20,11 @@
 
 <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 </head>
 <body>
 <!-- Wrapper Starts Here -->
-    <div class="wrapper"  data-role="page" id="pageone">
+    <div class="wrapper">
 
         <!-- Header Starts Here -->
         <header id="header">
@@ -63,11 +63,184 @@
                 <div class="wordDescriptionPage">
 					<div class="wDPHeader cathead">
 						<div class="container">
-							<h2><a href="#" class="rico-back profilebackBtn"></a>QUIZ</h2>
+							<div class="flexbox v-centr spaceBetween catheadmain">
+							    <a href="#" class="rico-back"></a>
+								<h2>Favourite Words</h2>
+								<div class="flexbox v-centr">
+									<span>120 SAVED WORDS</span>
+									<button class="btn btn-primary">delete</button>
+								</div>
+							</div>
 						</div>
 					</div>
 					
 				</div>	
+				<!-- fav word main content -->
+				<div class="fav-filter-wrap">
+					<div class="fav-container borderBox">
+						<!-- Fav word filter row -->
+						<div class="flexbox fav-filter-row">
+							<form class="fav-search">
+								<input type="text" placeholder="ENTER" />
+								<button class="btn btn-primary">search</button>
+							</form>
+							<button id="toCatSort" class="btn btn-white">sort by</button>
+							<form class="form-asc">
+								<div class="flexbox form-asc-wrap">
+									<div>
+										<input id="rad1" type="radio" name="selOrder" />
+										<label for="rad1">alphabetically</label>
+									</div>
+									<div>
+										<input id="rad2" type="radio" name="selOrder" checked />
+										<label for="rad2">Newest</label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- Sort by Cat dropdown -->
+					<div id="cat-drpdwn" class="cat-drpdwn">
+						<div class="flexbox v-centr h-centr">
+							<h4 class="block-heading">favourite words</h4>
+							<button class="btn btn-priamry">Apply</button>
+						</div>
+						<div class="filter-opt">
+							<ul class="clearfix">
+								<li>
+									<input id="opt-1" type="checkbox"  />
+									<label for="opt-1">aashiq</label>
+								</li>
+								<li>
+									<input id="opt-2" type="checkbox"  />
+									<label for="opt-2">ISHQ</label>
+								</li>
+								<li>
+									<input id="opt-3" type="checkbox"  />
+									<label for="opt-3">mulaqaat</label>
+								</li>
+								<li>
+									<input id="opt-4" type="checkbox"  />
+									<label for="opt-4">shakhsiiyaat</label>
+								</li>
+								<li>
+									<input id="opt-5" type="checkbox"  />
+									<label for="opt-5">UDASI</label>
+								</li>
+								<li>
+									<input id="opt-6" type="checkbox"  />
+									<label for="opt-6">SPECIAL</label>
+								</li>
+								<li>
+									<input id="opt-7" type="checkbox"  />
+									<label for="opt-7">maashooq</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Sort by Cat dropdown ends-->		
+				</div>
+					<!-- Fav word filter row ends -->
+				<div class="fav-container borderBox">	
+					<div class="fav-word-list">
+						<div class="fav-list">
+							<ul class="flexbox">
+								<li>
+									<div class="fav-card flexbox spaceBetween purp-shade1">
+										<div class="flexbox v-centr borderBox spaceBetween">
+											<span>DAAG</span>
+											<span>दाग</span>
+										</div>
+										<div class="flexbox v-centr borderBox spaceBetween">
+											<div class="fav-word-cat">
+												<p><span>category :</span> <span>AASHIQ</span></p>
+												<span>26 Jan 2020</span>
+											</div>
+											<div><span class="rico-delete_outline"></span></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="fav-card flexbox spaceBetween purp-shade2">
+										<div class="flexbox v-centr borderBox spaceBetween">
+											<span>AHL</span>
+											<span>अहल</span>
+										</div>
+										<div class="flexbox v-centr borderBox spaceBetween">
+											<div class="fav-word-cat">
+												<p><span>category :</span> <span>AASHIQ</span></p>
+												<span>26 Jan 2020</span>
+											</div>
+											<div><span class="rico-delete_outline"></span></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="fav-card flexbox spaceBetween purp-shade3">
+										<div class="flexbox v-centr borderBox spaceBetween">
+											<span>AHL</span>
+											<span>अहल</span>
+										</div>
+										<div class="flexbox v-centr borderBox spaceBetween">
+											<div class="fav-word-cat">
+												<p><span>category :</span> <span>AASHIQ</span></p>
+												<span>26 Jan 2020</span>
+											</div>
+											<div><span class="rico-delete_outline"></span></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="fav-card flexbox spaceBetween red-shade1">
+										<div class="flexbox v-centr borderBox spaceBetween">
+											<span>AHL</span>
+											<span>अहल</span>
+										</div>
+										<div class="flexbox v-centr borderBox spaceBetween">
+											<div class="fav-word-cat">
+												<p><span>category :</span> <span>AASHIQ</span></p>
+												<span>26 Jan 2020</span>
+											</div>
+											<div><span class="rico-delete_outline"></span></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="fav-card flexbox spaceBetween red-shade2">
+										<div class="flexbox v-centr borderBox spaceBetween">
+											<span>AHL</span>
+											<span>अहल</span>
+										</div>
+										<div class="flexbox v-centr borderBox spaceBetween">
+											<div class="fav-word-cat">
+												<p><span>category :</span> <span>AASHIQ</span></p>
+												<span>26 Jan 2020</span>
+											</div>
+											<div><span class="rico-delete_outline"></span></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="fav-card flexbox spaceBetween red-shade3">
+										<div class="flexbox v-centr borderBox spaceBetween">
+											<span>AHL</span>
+											<span>अहल</span>
+										</div>
+										<div class="flexbox v-centr borderBox spaceBetween">
+											<div class="fav-word-cat">
+												<p><span>category :</span> <span>AASHIQ</span></p>
+												<span>26 Jan 2020</span>
+											</div>
+											<div><span class="rico-delete_outline"></span></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				</div>
+				<!-- fav word main content ends -->
 			</div>
 		</section>
         <!-- Content Ends Here -->
@@ -90,43 +263,11 @@
     </div>
 <!-- Wrapper Ends Here -->
 
-<div id="pop-correct">
-	<div class="popup-wrap flexbox h-centr v-centr">
-		<div class="popup-global small correct-ans flexbox col v-centr">
-			<span class="popup-close"><i class="rico-close"></i></span>
-			<div class="popup-banner">
-				<img src="Content/images/Correct-popup.png" alt="correct-answer" />
-			</div>
-			<div class="score-container flexbox col h-centr">
-				<h3>20</h3>
-				<span>POINTS</span>
-			</div>
-			<h2 class="ans-msg">GOOD JOB BUDDY!</h2>
-			<P>Keep up the good work</P>
-		</div>
-	</div>
-</div>
-<div id="pop-wrong">
-	<div class="popup-wrap flexbox h-centr v-centr">
-		<div class="popup-global small wrong-ans flexbox col v-centr">
-			<span class="popup-close"><i class="rico-close"></i></span>
-			<div class="popup-banner">
-				<img src="Content/images/Oops-popup.png" alt="correct-answer" />
-			</div>
-			<div class="score-container flexbox col h-centr">
-				<h3>10</h3>
-				<span>POINTS</span>
-			</div>
-			<h2 class="ans-msg">NICE TRY!</h2>
-			<P>Don't worry! You've earned 10pts for the effort.</P>
-		</div>
-	</div>
-</div>
 
 <!-- <script src="Content/js/jquery.js"></script> -->
 
 <!-- <script src="Content/js/jquery.bxslider.js"></script> -->
-<!-- <script src="Content/js/site.js"></script> -->
+<script src="Content/js/site.js"></script>
 
 <!-- Wrapper Ends Here
 -->

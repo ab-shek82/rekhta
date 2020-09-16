@@ -131,4 +131,9 @@ $(this).find('.wordText h3').css({
 		$("#fullview-user").fadeToggle();
 	});
 	
+	$("#toCatSort").on('click', function(){
+		//$(this).toggleClass("fviewActive");
+		$("#cat-drpdwn").fadeToggle();
+	});
+	
 });

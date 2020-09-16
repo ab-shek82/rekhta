@@ -10,6 +10,7 @@
 .spaceBetween {justify-content: space-between; -webkit-justify-content: space-between; -ms-justify-content: space-between;}
 
 .btn.btn-sceondary {background: #CEFDD3; border: 2px solid #28A176; color: #28A176;}
+.btn.btn-white {background-color: #fff; border-color: #ccc; color: #666; border-width: 1px;}
 
 /* Global styles for Pop up */
 .popup-wrap {position: fixed; top: 0; left: 0; background-color: rgba(255,255,255,0.7); width: 100%; height: 100%; z-index: 999;}
@@ -201,7 +202,45 @@ font-family: 'Lato', sans-serif; color: #00AAFF; line-height: 21px; display: inl
 
 .purp-shade1 {background-color: #AD7BDF; border-color: #4B0D89;}
 .purp-shade2 {background-color: #AC8AEE; border-color: #761BBE;}
+.purp-shade3 {background-color: #CB80E8; border-color: #7A2C97;}
+
+.red-shade1 {background-color: #F85E5E; border-color: #A32424;}
+.red-shade2 {background-color: #F98989; border-color: #A32424;}
+.red-shade3 {background-color: #FA8FA8; border-color: #EB315E;}
+
 .green-shade1 {background-color: #39D694; border-color: #18816D;}
+
+/* Favourite Words */
+.fav-container {max-width: 924px; margin: 0 auto;}
+
+.cathead .btn-primary {margin-left: 30px;}
+.catheadmain > a, .catheadmain h2, .catheadmain > div {flex: 1; -weblit-flex: 1; -ms-flex: 1;} 
+.catheadmain > a {text-align: left; color: #888888;}
+.catheadmain > div {justify-content: flex-end; -webkit-justify-content: flex-end; -ms-justify-content: flex-end;}
+
+.fav-filter-row {margin: 22px 0 50px;}
+.fav-filter-row > .fav-search {position: relative; flex: 2; -webkit-flex: 2; -ms-flex: 2;}
+.fav-filter-row > .fav-search input {height: 40px; border-radius: 50px; border: 1px solid #cccccc; box-shadow: none; padding: 0 15px; font-size: 12px; font-family: "Lato"; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; width: 100%; box-sizing: border-box;}
+.fav-filter-row > .fav-search .btn {position: absolute; right: 0; top: 1px; height: 40px;}
+.fav-filter-row .btn-white {height: 40px; margin: 0 30px;}
+.form-asc-wrap {background-color: #fff; border: 1px solid #ccc; border-radius: 50px; }
+.form-asc-wrap > div {position: relative;}
+.form-asc-wrap input {position: absolute; opacity: 0; z-index: -1;}
+.form-asc-wrap label {line-height: 38px; padding: 0 15px; color: #666; text-transform: uppercase; font-family: "latoxregular"; font-weight: bold; font-size: 11px; letter-spacing: 0.5px; display: inline-block; text-align: center;}
+.form-asc-wrap input:checked + label {color: #00aaff; letter-spacing: .05em; text-transform: uppercase; border-radius: 30px; border: 2px solid #00aaff; box-sizing: border-box; background-color: #E1F2FB; cursor: pointer; line-height: 34px;}
+
+.fav-word-list ul {margin: 0 -12px; flex-wrap: wrap; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap;}
+.fav-word-list ul li {flex: 0 0 50%; padding: 0 12px; box-sizing: border-box;}
+
+.fav-filter-wrap {position: relative;}
+.cat-drpdwn {padding: 15px 0; box-shadow: 0 4px 4px rgba(0,0,0,0.2); position: absolute; background: #FAFAFA; left: 0; right: 0; top: 61px; border-top: 2px solid #ccc; display: none;}
+.cat-drpdwn .block-heading {margin: 0 30px 0 0;}
+.filter-opt {padding: 0 75px; margin-top: 40px;}
+.filter-opt ul li {position: relative; float: left;}
+.filter-opt input {position: absolute; opacity: 0; z-index: -1;}
+.filter-opt label {text-transform: uppercase; color: #666; font-size: 12px; position: relative; padding-left: 33px; line-height: 25px; display: inline-block; min-width:  100px;}
+.filter-opt label:before {content: ""; display: inline-block; width: 25px; height: 25px; border: 2px solid #ccc; border-radius: 5px; box-shadow: inset 0 2px 4px #ccc; box-sizing: border-box; position: absolute; left: 0; top: 0;}
+.filter-opt input:checked + label:after {content:"\2714"; position: absolute; left: 6px; top: 0; font-size: 14px;}
 
 /* Medium screen sizes  */
 @media(max-width: 1199px) {
