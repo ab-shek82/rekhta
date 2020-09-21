@@ -242,6 +242,7 @@ font-family: 'Lato', sans-serif; color: #00AAFF; line-height: 21px; display: inl
 .filter-opt label:before {content: ""; display: inline-block; width: 25px; height: 25px; border: 2px solid #ccc; border-radius: 5px; box-shadow: inset 0 2px 4px #ccc; box-sizing: border-box; position: absolute; left: 0; top: 0;}
 .filter-opt input:checked + label:after {content:"\2714"; position: absolute; left: 6px; top: 0; font-size: 14px;}
 
+.fav-couplet-list .fav-word-cat p {margin-bottom: 15px;}
 /* Medium screen sizes  */
 @media(max-width: 1199px) {
 	.fview-boxpad.weeklyProgress {padding: 0 50px;}
